@@ -18,12 +18,9 @@ mongoose
 
 const app = express();
 
-/*const allowedOrigins = process.env.NODE_ENV ==='production' 
-    ? ['https://leb-estate-ko6b.onrender.com'] 
-    : ['http://localhost:5174'];*/
-
 app.use(cors({
-    origin:["http://localhost:5174"]
+    origin:['https://leb-estate-ko6b.onrender.com'] ,
+    credentials:true
 }));
 app.use(express.json());
 app.use(cookieParser());
