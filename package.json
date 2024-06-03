@@ -1,0 +1,26 @@
+{
+  "name": "real-estate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon API/index.js",
+    "start": "node API/index.js",
+    "build": "npm install && npm install --prefix clientSide && npm run build --prefix clientSide"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-handler": "^0.0.3",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.2",
+    "nodemon": "^3.0.3"
+  }
+}
