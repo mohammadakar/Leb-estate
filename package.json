@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon API/index.js",
     "start": "node API/index.js",
-    "build": "npm install && npm install --prefix clientSide && npm run build --prefix clientSide"
+    "build": "npm install && npm install --prefix clientSide && npx --prefix clientSide vite build"
   },
   "engines": {
     "node": ">=18.x"
