@@ -19,7 +19,7 @@ mongoose
 const app = express();
 
 app.use(cors({
-    origin:['https://leb-estate-ko6b.onrender.com'] ,
+    origin:['http://localhost:5173'] ,
     credentials:true
 }));
 app.use(express.json());
@@ -36,5 +36,5 @@ app.use("/api/listing", require("./routes/listingRoute"));
 
 app.use(express.static(path.join(__dirname, "../clientSide/dist")));
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, "..",'clientSide', 'dist', 'index.html'));
+    res.sendFile(path.resolve(__dirname,'..','clientSide', 'dist', 'index.html'));
 });
