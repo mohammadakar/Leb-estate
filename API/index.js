@@ -32,8 +32,8 @@ app.listen(process.env.PORT || 4000, () => {
 app.use("/api/users", require("./routes/UserRoute"));
 app.use("/api/auth", require("./routes/authRoute"));
 app.use("/api/listing", require("./routes/listingRoute"));
-app.use(express.static(path.join(__dirname, "clientSide/dist")));
+app.use(express.static(path.join(__dirname, "../clientSide/dist")));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'clientSide', 'dist', 'index.html'));
+    res.sendFile(path.resolve(__dirname, "..",'clientSide', 'dist', 'index.html'));
 });
